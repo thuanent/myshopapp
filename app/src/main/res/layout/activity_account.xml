@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản của tôi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:text="Xin chào, [Tên người dùng/Email]"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Button
+        android:id="@+id/buttonViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem Giỏ hàng"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/buttonViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử Đơn hàng"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/btnApproveOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duyệt đơn hàng"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#8df7f7"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/btnManageProcessingOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng đang xử lý"
+        android:backgroundTint="#8df7f7"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/buttonStatisticsOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống kê đơn hàng"
+        android:visibility="gone" android:layout_marginBottom="8dp"
+        android:backgroundTint="#8df7f7"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:id="@+id/btnManageUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý tài khoản người dùng"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#8df7f7"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light"/>/>
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light"/> </LinearLayout>

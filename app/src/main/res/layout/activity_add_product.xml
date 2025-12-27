@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sản phẩm" />
+
+    <EditText
+        android:id="@+id/edtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giá sản phẩm"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mô tả sản phẩm"
+        android:minLines="3" />
+
+    <EditText
+        android:id="@+id/edtProductImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL hình ảnh sản phẩm"
+        android:inputType="textWebEditText" />
+
+    <EditText
+        android:id="@+id/edtProductSizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kích thước (cách nhau bằng dấu phẩy, ví dụ: S, M, L)"/>
+    <EditText
+        android:id="@+id/edtProductStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng tồn kho"
+        android:inputType="number"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/btnSaveProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu sản phẩm" />
+
+</LinearLayout>

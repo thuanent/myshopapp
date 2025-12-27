@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "559209591295",
+    "project_id": "myshopapp-a1aa1",
+    "storage_bucket": "myshopapp-a1aa1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559209591295:android:6c8ee52b405c45db18f7ca",
+        "android_client_info": {
+          "package_name": "com.thuan.myshopapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPzpepecV33HBaQ4nMUa1Q5P8zy3-aV3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

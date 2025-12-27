@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myshopapp">
+    <!-- Thêm quyền truy cập Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyShopApp"
+        tools:targetApi="31">
+
+        <!-- Thêm meta-data cho Firebase -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true" />
+
+        <!-- Các activity của bạn -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ProductActivity"/>
+        <activity android:name=".CartActivity" android:launchMode="singleTop"/>
+        <activity android:name=".PaymentActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="momomomo" />
+
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".ManageUsersActivity" />
+        <activity android:name=".AccountActivity"/>
+        <activity android:name=".OrderHistoryActivity" />
+        <activity android:name=".AdminOrderApprovalActivity"/>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".AdminStatisticsActivity" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".AdminOrderProcessingActivity" />
+        <activity android:name=".OrderDetailsStatisticsActivity"/>
+    </application>
+</manifest>

@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 0 VND"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên"/>
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa chỉ nhận hàng"/>
+
+    <RadioGroup
+        android:id="@+id/paymentMethodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioCash"
+            android:text="Tiền mặt" android:layout_height="50dp"  android:layout_width="100dp"/>
+        <RadioButton
+            android:id="@+id/radioBankTransfer"
+            android:text="Chuyển khoản" android:layout_height="50dp"  android:layout_width="100dp"/>
+        <RadioButton
+            android:id="@+id/radioMomo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MoMo" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:visibility="gone"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmBankTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận đã chuyển khoản"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="match_parent"
+        android:text="Thanh toán" android:layout_height="50dp"/>
+</LinearLayout>
